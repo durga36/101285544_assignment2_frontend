@@ -1,0 +1,45 @@
+<!--include header-->
+<%- include('include/_header')%>
+<!--/include header-->
+
+    <!--Main Site-->
+    <main id="site-main">
+        <div id="container">
+            <div class=box-nav d-flex justify-between>
+                <div class="filter">
+                    <a href="/"><i class="fas fa-angle-double-left"></i>Emplpyees</a>
+                </div>
+            </div>
+            <div class="form-title-centre">
+                <h2 class="text-dark">Update Employee</h2>
+                <span class="text-light">Use the form below to update an account</span>
+            </div>
+            <!--add employee form-->
+            <!--form handeling-->
+<form method="POST" id="update_employee">
+    <div class="new_employee">
+        <div class="form_group">
+            <label for="fname" class="text-light">First Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="first_name" value="" placeholder="John">
+        </div>
+        <div class="form_group">
+            <label for="lname" class="text-light">Last Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="last_name" value="" placeholder="Doe">
+        </div><div class="form_group">
+            <label for="email" class="text-light">Employee Email Id</label>
+            <input type="text" name="email" value="" placeholder="john.doe@hotmail.com">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+</form>
+            
+        </div>
+    </main>
+<!--/Main Site-->
+
+<!--include footer-->
+<%- include('include/_footer')%>
+<!--/include footer-->

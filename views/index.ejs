@@ -1,0 +1,37 @@
+<!--include header-->
+    <%- include('include/_header')%>
+<!--/include header-->
+
+    <!--Main Site-->
+    <main id="site-main">
+        <div id="container">
+            <div class=box-nav d-flex justify-between>
+                <a href="/add_employee" class="border-shadow">
+                    <span>Add Employee <i class="fas fa-user"></i></span>
+                </a>
+            </div>
+
+            <!--form handeling-->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Employee First Name</th>
+                            <th>Employee Last Name</th>
+                            <th>Employee Email Id</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show')%>
+                    </tbody>
+                </table>
+            </form>
+            <%=employees%>
+        </div>
+    </main>
+<!--/Main Site-->
+
+<!--include footer-->
+    <%- include('include/_footer')%>
+<!--/include footer-->
